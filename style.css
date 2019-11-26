@@ -1,0 +1,168 @@
+/*responsive web layout*/
+
+body {
+    background-color: #222;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 5em;
+    padding: 2em; 
+    background-image: url(images/pinkpink.png);
+    
+} 
+
+
+
+nav {
+    background-color: #5a5848;
+    color: rgb(204, 168, 174); 
+} 
+
+
+main {
+    color: rgb(127, 135, 138); 
+    
+}
+section {
+    padding: 1em 2em;
+}
+aside {
+    color: rgb(0, 0, 0); 
+    
+}
+
+article {
+    color: lightgray; 
+    
+}
+.photoBox {
+    display: flex;
+    flex-wrap: wrap;
+    border: rgb(238, 152, 181);
+}
+.photoColumn {
+    flex: 50%;
+    padding: 1% .5%;
+}
+.photoColumn img {
+    width: 100%;
+}
+footer {
+    height: 3em;
+    background-color: #e9c0ec;
+    color: rgb(247, 210, 244);
+    clear: left;
+}
+div {
+    box-sizing: border-box; 
+}
+
+
+
+
+
+/* ------- Mobile Phone ------- */
+@media only screen and (max-width: 600px){
+    main {
+        width: 100%;
+        background-color: rgb(110, 110, 101);
+    }
+       .specials {
+        width: 100%;
+    
+    }
+    .mainContent {
+        width: 100%;
+    }
+    .navBar {
+        color: rgb(238, 229, 145); 
+        background-color: rgb(184, 144, 175);
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        text-align: center;
+        line-height: 2.5em;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border-bottom: 1px solid cornsilk; 
+    }
+    .navBar a:hover {
+        background-color: #ecd083;
+        color: rgb(234, 225, 241);
+    }
+    .photoColumn {
+        flex: 100%;
+    }
+}
+
+
+
+
+/* ------- End of Mobile Phone ------- */
+/* ------- Tablet and IPad ------- */
+
+
+@media only screen and (min-width: 601px){
+    main {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #f0f5b3;
+    }
+       .specials {
+        width: 20%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 80%;
+        float: left;
+    }
+    .navBar {
+        overflow: hidden;
+        padding: 0 10%;
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        width: 25%;
+        float: left;
+        text-align: center;
+        line-height: 2em;
+        color: cornsilk;
+        text-decoration: none; 
+    }
+    .navBar a:hover {
+        background-color: #d9b5db;
+        color: rgb(231, 207, 243);
+    }
+    .photoColumn {
+        width: 50%;
+    }
+}
+
+
+/* ------- End of Tablet and IPad ------- */
+/* ------- Desktop ------- */
+@media only screen and (min-width: 1000px){
+    main {
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: #f0c8e1;
+    }
+    .specials {
+        width: 30%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 70%;
+        float: left;
+    }
+    .photoColumn {
+        flex: 50%;
+    }
+    
+}
+/* ------- End of Desktop ------- */
