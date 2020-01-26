@@ -1,2 +1,2 @@
 # Travel-Site---From-Milwaukee-to-Hong-Kong-
-Work in progress webiste 90% complete includes using video as a background 
+A mini travel portfolio that includes video backgrounds! This shows some front-end langauge skills being applied towards this website. 
